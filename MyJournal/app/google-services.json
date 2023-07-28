@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "372582492554",
+    "project_id": "journalapp-e51a4",
+    "storage_bucket": "journalapp-e51a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372582492554:android:8440bbf304f6fd88cd4073",
+        "android_client_info": {
+          "package_name": "com.devonngames.myjournal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372582492554-pc7dfq39dnctrs4lcmnvmsig8ggvpdl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devonngames.myjournal",
+            "certificate_hash": "30c1271e58a31d4e80fb748fa546a7d1f8564e68"
+          }
+        },
+        {
+          "client_id": "372582492554-me4rq5qjh2lkss83n6ombpibmpmcimol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDghBiNYQnJzgYh-9kvz8CBltTix0ErO1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372582492554-me4rq5qjh2lkss83n6ombpibmpmcimol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

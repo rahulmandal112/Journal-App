@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddJournalActivity">
+
+    <ImageView
+        android:id="@+id/post_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/gradient_main"
+        app:layout_constraintBottom_toTopOf="@+id/post_description_ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/post_username_textView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="14dp"
+        android:text="Post Title"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/post_date_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"></TextView>
+
+    <TextView
+        android:id="@+id/post_date_textView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Post Date"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/post_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"></TextView>
+
+    <ImageView
+        android:id="@+id/postCameraButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="22dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toTopOf="@+id/post_title_ET"
+        app:layout_constraintEnd_toEndOf="@+id/post_imageView"
+        app:layout_constraintStart_toEndOf="@+id/post_date_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/post_title_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Post Title"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/post_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_date_textView"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <EditText
+        android:id="@+id/post_description_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thoughts"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/post_save_journal_button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <ProgressBar
+        android:id="@+id/post_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/post_save_journal_button"
+        app:layout_constraintEnd_toEndOf="@+id/post_imageView"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <Button
+        android:id="@+id/post_save_journal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/post_imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
